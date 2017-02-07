@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2017-2-8</Date>
+  <Beta>False</Beta>
+  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <Name>PlexMediaServer</Name>
+  <Project>https://plex.tv/</Project>
+  <Overview>
+    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!
+  </Overview>
+  <Registry>https://hub.docker.com/r/plexinc/pms-docker/</Registry>
+  <GitHub>https://github.com/plexinc/pms-docker</GitHub>
+  <Repository>plexinc/pms-docker</Repository>
+  <Support>http://lime-technology.com/forum/index.php?topic=40654.0</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment>
+    <Variable>
+	     <Name>TZ</Name>
+	     <Value>Asia/Shanghai</Value>
+	  </Variable>
+	  <Variable>
+	     <Name>PLEX_CLAIM</Name>
+	     <Value>https://www.plex.tv/claim</Value>
+	  </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexMediaServer/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexMediaServer/transcode</HostDir>
+      <ContainerDir>/transcode</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexMediaServer/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+</Containers>
