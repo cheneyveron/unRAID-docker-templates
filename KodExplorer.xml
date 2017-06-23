@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2017-6-24</Date>
+  <Beta>False</Beta>
+  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <Name>KodExplorer</Name>
+  <Project>https://github.com/kalcaddle/KODExplorer</Project>
+  <Overview>
+    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!
+  </Overview>
+  <Registry>https://hub.docker.com/r/ylck/kodexplorer</Registry>
+  <GitHub>https://github.com/kalcaddle/KODExplorer</GitHub>
+  <Repository>ylck/kodexplorer</Repository>
+  <Support>http://lime-technology.com/forum/index.php?topic=40654.0</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/KodExplorer/config</HostDir>
+      <ContainerDir>/var/www/html/data/User</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/var/www/html/data/Group/public/home</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexMediaServer/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/kalcaddle/static/master/images/kod/common-alpha.png</Icon>
+</Containers>
