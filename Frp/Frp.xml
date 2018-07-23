@@ -2,15 +2,15 @@
 <Containers>
   <Date>2018-7-24</Date>
   <Beta>False</Beta>
-  <Category>Frp</Category>
-  <Name>Frp</Name>
-  <Project>https://github.com/kalcaddle/Frp</Project>
+  <Category>frp</Category>
+  <Name>frp</Name>
+  <Project>https://github.com/kalcaddle/KodExplorerDockerfile</Project>
   <Overview>
-    Frp
+    frp
   </Overview>
   <Registry>https://hub.docker.com/r/ylck/frp</Registry>
   <GitHub>https://github.com/kalcaddle/frp</GitHub>
-  <Repository>ylck/Frp</Repository>
+  <Repository>ylck/frp</Repository>
   <Support>http://lime-technology.com/forum/index.php?topic=40654.0</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
