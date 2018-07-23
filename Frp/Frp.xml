@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-7-24</Date>
+  <Beta>False</Beta>
+  <Category>Frp</Category>
+  <Name>Frp</Name>
+  <Project>https://github.com/kalcaddle/Frp</Project>
+  <Overview>
+    Frp
+  </Overview>
+  <Registry>https://hub.docker.com/r/ylck/frp</Registry>
+  <GitHub>https://github.com/kalcaddle/frp</GitHub>
+  <Repository>ylck/Frp</Repository>
+  <Support>http://lime-technology.com/forum/index.php?topic=40654.0</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+     <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment>
+    <Variable>
+	     <Name>name</Name>
+	     <Value>ssh123</Value>
+	  </Variable>
+    <Variable>
+	     <Name>host</Name>
+	     <Value>192.168.123.122</Value>
+	  </Variable>
+    <Variable>
+	     <Name>rport</Name>
+	     <Value>6001</Value>
+	  </Variable>
+	  <Variable>
+	     <Name>port</Name>
+	     <Value>22</Value>
+	  </Variable>
+  </Environment>
+  <Banner>https://yt3.ggpht.com/-AJD76UeoW40/AAAAAAAAAAI/AAAAAAAAAAA/toXN1zYOhoc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</Banner>
+  <Icon>https://yt3.ggpht.com/-AJD76UeoW40/AAAAAAAAAAI/AAAAAAAAAAA/toXN1zYOhoc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</Icon>
+</Containers>

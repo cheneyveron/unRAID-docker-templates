@@ -37,6 +37,6 @@
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  https://yt3.ggpht.com/-AJD76UeoW40/AAAAAAAAAAI/AAAAAAAAAAA/toXN1zYOhoc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg<Banner></Banner>
+  <Banner>https://yt3.ggpht.com/-AJD76UeoW40/AAAAAAAAAAI/AAAAAAAAAAA/toXN1zYOhoc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</Banner>
   <Icon>https://yt3.ggpht.com/-AJD76UeoW40/AAAAAAAAAAI/AAAAAAAAAAA/toXN1zYOhoc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</Icon>
 </Containers>
