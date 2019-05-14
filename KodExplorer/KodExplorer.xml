@@ -10,7 +10,7 @@
   </Overview>
   <Registry>https://hub.docker.com/r/ylck/kodexplorer-docker</Registry>
   <GitHub>https://github.com/kalcaddle/KODExplorer</GitHub>
-  <Repository>ylck/kodexplorer</Repository>
+  <Repository>ylck/kodexplorer-docker</Repository>
   <Support>http://lime-technology.com/forum/index.php?topic=40654.0</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
@@ -26,12 +26,12 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/KodExplorer/config</HostDir>
+      <HostDir>/mnt/user/appdata/KodExplorer/User</HostDir>
       <ContainerDir>/var/www/html/data/User</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/video/Documentary/BlaireIvory</HostDir>
+      <HostDir>/mnt/user/appdata/KodExplorer/home</HostDir>
       <ContainerDir>/var/www/html/data/Group/public/home</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
